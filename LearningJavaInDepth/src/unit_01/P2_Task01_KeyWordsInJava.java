@@ -1,6 +1,6 @@
 package unit_01;
 
-public class P2_Task02_KeyWordsInJava {
+public class P2_Task01_KeyWordsInJava {
 	
 	public static void main(String[] args)
 	{
@@ -24,7 +24,7 @@ class int{
 }
 
 class ABC {
-	void display() {
+	void display() { 
 		System.out.println("In class Two.......");
 	}
 }

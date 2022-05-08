@@ -135,8 +135,7 @@ class DEF
 		System.out.println(a);
 	}
 	
-	static void 
-	typeconversionAndtypeCasting()
+	static void typeconversionAndtypeCasting()
 	{ 
 		
 		double f;//64 slots 

@@ -117,23 +117,23 @@ class OperatorsInJava {
 		int c = 20;
 		
 		//logical && and bitwise &
-		System.out.println("a<b && a++<c");//false && true = false
-		System.out.println("a");		//10 because condition is not checked
+		System.out.println(a<b && a++<c);//false && true = false
+		System.out.println(a);		//10 because condition is not checked
 		
-		System.out.println("a<b & a++<c");//false && true = false
-		System.out.println("a");		//11 because second condition is checked
+		System.out.println(a<b & a++<c);//false && true = false
+		System.out.println(a);		//11 because second condition is checked
 		
 		
 		//logical || and bitwise |
 		
-		System.out.println("a>b || a<c");
-		System.out.println("a>b || a<c");
+		System.out.println(a>b || a<c);
+		System.out.println(a>b || a<c);
 		
-		System.out.println("a>b || a++<c");//true || true = true
-		System.out.println("a");
+		System.out.println(a>b || a++<c);//true || true = true
+		System.out.println(a);
 		
-		System.out.println("a>b | a++<c");//true | true = true
-		System.out.println("a");
+		System.out.println(a>b | a++<c);//true | true = true
+		System.out.println(a);
 		
 		/*
 		 * Exclusive and Inclusive or{| and ^}
