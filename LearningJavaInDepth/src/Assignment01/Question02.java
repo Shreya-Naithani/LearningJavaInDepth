@@ -16,9 +16,7 @@ public class Question02 {
 		o3.method();
 		//get result
 		o3.print_count();
-
 	}
-
 }
 
 class check
@@ -31,6 +29,7 @@ class check
 	}
 	void print_count()
 	{
+		System.out.println("shreya_Naithani_20012534_H");
 		System.out.println("Total number of count is-> "+count);
 	}
 }

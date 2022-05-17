@@ -1,50 +1,60 @@
 package Assignment01;
+
 import java.util.Scanner;
 
+class Employee
+{
+	String Name;
+	int age;
+	String Department;
+	int Salary;
+	static int SalA,SalB,SalC,SalD;
+	Employee()
+	{
+		System.out.println("Enter Student Details:");
+		Scanner s=new Scanner(System.in);
+		System.out.print("Name: ");
+		this.Name=s.nextLine();
+		System.out.print("Age: ");
+		this.age=s.nextInt();
+		System.out.print("Department: ");
+		this.Department=s.next();
+		System.out.print("Salary ");
+		this.Salary=s.nextInt();
+		if(this.Salary>=30000) this.Salary=25000;
+	}
+}
 public class Question05 {
 
 	public static void main(String[] args) {
-		String name;
-		int age;
-		char department;
-		float salary;
-		Scanner sc = new Scanner(System.in);
-		Employee arr[] = new Employee[8];
-		for(int i=0;i<8;i++) {
-			System.out.println("Enter name::");
-			name=sc.next();
-			System.out.println("Enter age::");
-			age=sc.nextInt();
-			System.out.println("Enter department::");
-			department=sc.next().charAt(0);
-			System.out.println("Enter salary::");
-			salary=sc.nextFloat();
-			arr[i] = new Employee(name,age,department,salary);
-		}
-		sc.close();
-		Employee obj = new Employee();
-		obj.def_salary(arr);
-	}
-
-}
-class Employee {
-	String name;
-	int age;
-	char department;
-	float salary;
-    float def_salary;
-	Employee(String name,int age,char department,float salary) {
-		this.name=name;
-		this.department=department;
-		this.age=age;
-		this.salary=salary;
-		this.def_salary=salary;
-	}
-	Employee(){}
-	void def_salary(Employee arr[]) {
+		Employee array[];
+		array=new Employee[8];
 		for(int i=0;i<8;i++)
-		if(arr[i].salary>30000) {
-			arr[i].def_salary=25000;
+		{
+			array[i]=new Employee();
 		}
+		for(int i=0;i<8;i++)
+		{
+			int sumA=0,sumB=0,sumC=0,sumD=0;
+			if(array[i].Department=="A")
+			{
+				sumA+=array[i].Salary;
+			}
+			else if(array[i].Department=="B")
+			{
+				sumB+=array[i].Salary;
+			}
+			else if(array[i].Department=="C")
+			{
+				sumC+=array[i].Salary;
+			}
+			else {
+				sumD+=array[i].Salary;
+			}		
+		}
+		System.out.println("For A: "+Employee.SalA);
+		System.out.println("For B: "+Employee.SalB);
+		System.out.println("For C: "+Employee.SalC);
+		System.out.println("For D: "+Employee.SalD);
 	}
 }

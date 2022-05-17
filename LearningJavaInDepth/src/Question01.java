@@ -5,7 +5,7 @@ Your program would be able to find the average percentage of students in this se
 Use constructors to create these 6 objects and input from Scanner class.
 */
 
-package Assignment01;
+
 
 public class Question01  {
 
@@ -19,7 +19,10 @@ public class Question01  {
 		//Getting the result 
 		Student result = new Student();
 		result.get_avg();
+		
+
 	}
+
 }
 
 class Student

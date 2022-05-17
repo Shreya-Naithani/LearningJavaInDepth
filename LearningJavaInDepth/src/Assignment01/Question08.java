@@ -7,6 +7,7 @@ public class Question08 {
 		
 		int a[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 		int n = a.length;
+		System.out.println("shreya_naithania_20012534_H");
 		
 		array obj = new array();
 		obj.delete(a, n, 3);

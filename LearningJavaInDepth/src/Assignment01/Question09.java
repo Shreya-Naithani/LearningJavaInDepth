@@ -1,17 +1,14 @@
 package Assignment01;
 
-
-
 public class Question09 {
 
 	public static void main(String[] args) {
+		System.out.println("shreya_naithani");
 		
 		AnotherClass obj = new AnotherClass();
 		obj.showData();
 		obj.accessData();
-
 	}
-
 }
 
 // You can make a class Public or leave it default or make it abstract or final but you cannot make a class private or protected...
@@ -22,9 +19,6 @@ private class rom //Illegal modifier for the class rom; only public, abstract & 
 }
 
 //But you can make variables -> public, private, protected or default its up to you according to your need...
-
-
-
 
 class ParentClass{
 	int a = 10;//Default protection!
@@ -60,5 +54,4 @@ class AnotherClass extends ChildClass{
 		System.out.println(obj.c);
 
 }
-
 }
