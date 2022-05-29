@@ -165,7 +165,7 @@ class ABC5 {
 		try {
 			useOfThrow(18);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			//  Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
